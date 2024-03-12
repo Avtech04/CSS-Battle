@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(242, 245, 245);
+        display: flex;
+        flex-direction: row;
+    }
+    .conatiner{
+        height: 78vh;
+        width: 100%;
+        background-color: beige;
+        display: flex;
+    }
+    .search{
+        width: 60%;
+    }
+    .img{
+        background: url(./jetha.jpeg);
+    width: 49px;
+    height: 49px;
+    border-radius: 34px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 1%;
+    left: 82vw;
+    border: 1px solid;
+    }
+    .imgg{
+        background: url(./jetha.jpeg);
+    width: 49px;
+    height: 49px;
+    border-radius: 34px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid;
+    padding: 10px;
+    margin: 24px 58px;
+    margin: auto;
+    margin-top: 12px;
+
+}
+    
+    .imggg{
+        background: url(./jetha.jpeg);
+    width: 49px;
+    height: 49px;
+    border-radius: 34px;
+    background-position: center;
+    background-size: cover;
+   
+ 
+    }
+    .imgggg{
+        background: url(./jetha.jpeg);
+    width: 49px;
+    height: 49px;
+    border-radius: 34px;
+    background-position: center;
+    background-size: cover;
+   
+ 
+    margin: -4px 14px;
+    }
+    .details{
+        display: flex;
+    }
+    .left{
+        width: 80%;
+        height: 100%;
+        /* background-color: blueviolet; */
+        display: flex;
+        background: white;
+    /* box-shadow: 2px solid sienna;
+    box-shadow: 2px 2px 2px 2px #e5e8e9; */
+    margin: 12px 10px 10px 9px;
+    }
+    .right{
+        width: 17%;
+        height: 100%;
+        background-color: chartreuse;
+        background: white;
+    box-shadow: 2px solid sienna;
+    box-shadow: 2px 2px 2px 2px #e5e8e9;
+    margin: 12px 10px 10px 9px;
+    }
+    .left1{
+        width: 20%;
+        height: 100%;
+        background-color: rgb(33, 20, 45);
+        display: flex;
+        flex-direction: column;
+        background: white;
+    box-shadow: 2px solid sienna;
+    box-shadow: 2px 2px 2px 2px #e5e8e9;
+    margin: 12px 10px 10px 9px;
+    }
+    .left2{
+        width: 70%;
+        height: 100%;
+        background-color: rgb(105, 24, 180);
+        background: white;
+    box-shadow: 2px solid sienna;
+    box-shadow: 2px 2px 2px 2px #e5e8e9;
+    margin: 12px 10px 10px 9px;
+    }
+    .upper{
+        width: 90%;
+        height: 36%;
+        /* background-color: rgb(32, 102, 102); */
+        margin: 12px;
+        background: white;
+    box-shadow: 2px solid sienna;
+    box-shadow: 2px 2px 2px 2px #e5e8e9;
+    margin: 12px 10px 10px 9px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 7px;
+    font-weight: 800;
+    font-family: cursive;
+    }
+    .bottom{
+        width: 90%;
+    height: 55%;
+    padding: 3px;
+    margin: 12px;
+    background: white;
+    /* box-shadow: 2px solid sienna;
+    box-shadow: 2px 2px 2px 2px #e5e8e9; */
+    margin: 12px 10px 10px 9px;
+
+    }
+    .head{
+        font-size: 22px;
+    text-align: center;
+    color: blue;
+    padding: 10px;
+    background: #c6c6e8;
+}
+    
+    .another_upper{
+        height: 35%;
+    width: 95%;
+    margin: 12px;
+    background: beige;
+    display: flex;
+    background: white;
+    
+    margin: 12px 10px 10px 9px;
+    }
+    .r1,.r2{
+        width: 50%;
+    height: 90%;
+    background: darkblue;
+    margin: 20px;
+    background: white;
+    box-shadow: 2px solid sienna;
+    box-shadow: 2px 2px 2px 2px #e5e8e9;
+    margin: 12px 10px 10px 9px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 7px;
+    font-weight: 800;
+    font-family: cursive;
+    }
+    .another_bottom{
+        height: 55%;
+    width: 95%;
+    background: white;
+    box-shadow: 2px solid sienna;
+    box-shadow: 2px 2px 2px 2px #e5e8e9;
+    margin: 12px 10px 10px 9px;
+    }
+    .temp{
+        font-size: 25px;
+    padding: 12px;
+    background-color: white;
+    border: 1px dotted;
+    margin-left: 12px;
+    margin-top: 3px;
+    /* padding: 12px; */
+    }
+    .bb{
+        padding: 12px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1px 1px grey;
+    display: flex;
+    }
+    .tempo{
+        height: 41%;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px grey;
+    }
+    .tempa{
+        padding: 19px;
+    background: #e5e2e2;
+    margin: 5px;
+    box-shadow: 1px 1px;
+
+    }
+    .reward{
+        padding: 13px;
+    color: #e73b98;
+    font-weight: 800;
+    }
+    .val{
+        padding: 13px 2px;
+    color: blue;
+    font-weight: 900;
+
+    }
+    .first{
+        display: flex;
+    }
+    .images{
+        display: flex;
+    }
+    .f1{
+        width: 70%;
+    padding: 12px;
+    font-size: 21px;
+    font-weight: 900;
+    font-family: cursive;
+    }
+    .f2{
+        width: 30%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: cursive;
+    color: grey;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <div class="search">
+              <i class="fa-solid fa-magnifying-glass" style="font-size: 23px;
+            padding: 12px;
+            margin-left: 12px "></i>
+            <input type="text" placeholder="Search here" style="width: 77%;
+            outline: none;
+            padding: 11px;
+            background: #eeeeee;
+            border: 0px;
+            margin: 11px 18px;
+            position: relative;
+            top: -11px;">
+        </div>
+        <div><i class="fa-solid fa-bell temp"></i></div>
+        <div><i class="fa-solid fa-gear temp"></i></div>
+        <div class="details">
+            <div class="img"></div>
+            <div class="name" style="font-size: 20px;
+            font-family: cursive;
+            position: absolute;
+            right: 8vw;
+            top: 2vh;">Ayush</div>
+        </div>
+    </div>
+
+    <div class="conatiner">
+        <div class="left">
+            <div class="left1">
+                <div class="upper">Month Visit <br> 19089 <br><div class="imgg"></div></div>
+                <div class="bottom">
+                    <div class="head">
+                        World Rank
+                    </div>
+                    <div class="bb">
+                        <div class="imggg"></div>
+                        <div class="reward">RWDS</div>
+                        <div class="val">282</div>
+                    </div>
+                    <div class="bb"> <div class="imggg"></div>
+                    <div class="reward">RWDS</div>
+                    <div class="val">282</div></div>
+                    <div class="bb"> <div class="imggg"></div>
+                    <div class="reward">RWDS</div>
+                    <div class="val">282</div></div>
+                </div>
+            </div>
+            <div class="left2">
+                <div class="another_upper">
+                    <div class="r1">Month Visit <br> 19089 <br><div class="imgg"></div></div>
+                    <div class="r2">Month Visit <br> 19089 <br><div class="imgg"></div></div>
+                </div>
+                <div class="another_bottom">
+                    <div class="head">
+                       Discussion Group
+                    </div>
+                    <div class="tempo">
+                        <div class="first">
+                            <div class="f1">RDD UI Design</div>
+                            <div class="f2">5th December</div>
+                            
+                        </div>
+                        <div class="images">
+                            <div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="first">
+                            <div class="f1">RDD UI Design</div>
+                            <div class="f2">5th December</div>
+                            
+                        </div>
+                        <div class="images">
+                            <div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div><div class="imgggg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="head">
+Team Dynamic             </div>
+<div class="tempa">ccc</div>
+<div class="tempa">lfkfn</div>
+<div class="tempa">dnfknf</div>
+<div class="tempa">dnkddk</div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
